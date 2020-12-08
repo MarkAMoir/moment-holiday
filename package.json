@@ -32,9 +32,9 @@
   "bugs": {
     "url": "https://github.com/kodie/moment-holiday/issues"
   },
-  "homepage": "https://github.com/kodie/moment-holiday",
+  "homepage": "https://github.com/MAMoir/moment-holiday",
   "license": "MIT",
-  "main": "./build/moment-holiday-us.min.js",
+  "main": "./build/moment-holiday-uk.min.js",
   "files": [
     "build/",
     "locale/"
