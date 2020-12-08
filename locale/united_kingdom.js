@@ -33,11 +33,11 @@
       date: 'easter-2',
       keywords_y: ['good', 'friday'],
     },
-    // "Easter Sunday": {
-    //   date: 'easter',
-    //   keywords_y: ['easter'],
-    //   keywords:['sunday']
-    // },
+    "Easter Sunday": {
+      date: 'easter',
+      keywords_y: ['easter'],
+      keywords:['sunday']
+    },
     "Easter Monday": {
       date: 'easter+1)',
       keywords_y: ['easter'],
