@@ -38,11 +38,11 @@ function generate(locales, set, minify, filename) {
     .pipe(gulp.dest('build/'));
 }
 
-gulp.task('default', function() {
+gulp.task('default', async function() {
   generate(argv.locale, argv.set, argv.min, argv.name);
 });
 
-gulp.task('build', function() {
+gulp.task('build', async function() {
   var locales = [];
   var localePath = require('path').join(__dirname, 'locale');
   require('fs').readdirSync(localePath).forEach(function(file){
