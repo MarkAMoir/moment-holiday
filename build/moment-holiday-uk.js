@@ -5,7 +5,8 @@
 //! https://github.com/kodie/moment-holiday
 
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  // var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment = require('moment');
 
   var parserExtensions = [];
 
@@ -619,51 +620,52 @@
 */
 
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  // var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment = require('moment');
 
   moment.holidays.united_kingdom = {
     "New Year's Day": {
       date: '1/1',
       keywords_n: ['eve']
     },
-    "Saint David's Day": {
-      date: '3/1',
-      keywords:['David', 'st[\\s\\.]'],
-      regions: ['WL']
-    },
-    "Saint Patrick's Day": {
-      date: '3/17',
-      keywords:['paddy', 'st[\\s\\.]'],
-      regions: ['NI']
-    },
+    // "Saint David's Day": {
+    //   date: '3/1',
+    //   keywords:['David', 'st[\\s\\.]'],
+    //   regions: ['WL']
+    // },
+    // "Saint Patrick's Day": {
+    //   date: '3/17',
+    //   keywords:['paddy', 'st[\\s\\.]'],
+    //   regions: ['NI']
+    // },
     "Good Friday": {
       date: 'easter-2',
       keywords_y: ['good', 'friday'],
     },
-    "Easter Sunday": {
-      date: 'easter',
-      keywords_y: ['easter'],
-      keywords:['sunday']
-    },
+    // "Easter Sunday": {
+    //   date: 'easter',
+    //   keywords_y: ['easter'],
+    //   keywords:['sunday']
+    // },
     "Easter Monday": {
       date: 'easter+1)',
       keywords_y: ['easter'],
       keywords: ['monday'],
       regions: ['EN', 'NI', 'WL']
     },
-    "Mothering Sunday": {
-      date: 'easter-21',
-      keywords_y:['mother'],
-      keywords: ['sunday', 'day']
-    },
-    "Saint George's Day": {
-      date: '4/24',
-      keywords: ['st[\\s\\.]', 'george'],
-      regions: ['EN']
-    },
-    "May Day": {
-      date: '5/1'
-    },
+    // "Mothering Sunday": {
+    //   date: 'easter-21',
+    //   keywords_y:['mother'],
+    //   keywords: ['sunday', 'day']
+    // },
+    // "Saint George's Day": {
+    //   date: '4/24',
+    //   keywords: ['st[\\s\\.]', 'george'],
+    //   regions: ['EN']
+    // },
+    // "May Day": {
+    //   date: '5/1'
+    // },
     "Early May Bank Holiday" : {
       date: '5/(1,1)',
       keywords_y: ['may'],
@@ -673,46 +675,46 @@
       date: '5/(1,-1)',
       keywords: ['bank', 'spring', 'late']
     },
-    "Queen's Birthday": {
-      date: '6/(6,2)',
-      keywords: ['queen']
-    },
-   "Father's Day": {
-      date: '6/(0,3)',
-      keywords: ['dad', 'father']
-    },
-    "Battle of the Boyne": {
-      date: '6/12',
-      keywords: ['battle', 'boyne'],
-      regions: ['NI']
-    },
-    "Summer Bank Holiday (Scotland)": {
-      date: '8/(1,1)',
-      keywords: ['summer', 'bank'],
-      regions: ['SC']
-    },
+  //   "Queen's Birthday": {
+  //     date: '6/(6,2)',
+  //     keywords: ['queen']
+  //   },
+  //  "Father's Day": {
+  //     date: '6/(0,3)',
+  //     keywords: ['dad', 'father']
+  //   },
+  //   "Battle of the Boyne": {
+  //     date: '6/12',
+  //     keywords: ['battle', 'boyne'],
+  //     regions: ['NI']
+  //   },
+  //   "Summer Bank Holiday (Scotland)": {
+  //     date: '8/(1,1)',
+  //     keywords: ['summer', 'bank'],
+  //     regions: ['SC']
+  //   },
     "Summer Bank Holiday": {
       date: '8/(1,-1)',
       keywords: ['summer', 'bank'],
       keywords_n: ['scottish', 'scotland'],
       regions: ['EN', 'WL', 'NI']
     },
-    "Halloween": {
-      date: '10/31',
-    },
-    "Guy Fawks Day": {
-      date: '10/5',
-      keywords: ['guy', 'fawks', 'bonfire']
-    },
-    "Remembrance Day": {
-      date: '1/(0,2)',
-      keywords: ['poppy', 'remembrance']
-    },
-    "Saint Andrews Day": {
-      date: '10/30',
-      keywords: ['andrew', 'saint', 'st[\\s\\.]'],
-      regions: ['SL']
-    },
+    // "Halloween": {
+    //   date: '10/31',
+    // },
+    // "Guy Fawks Day": {
+    //   date: '10/5',
+    //   keywords: ['guy', 'fawks', 'bonfire']
+    // },
+    // "Remembrance Day": {
+    //   date: '1/(0,2)',
+    //   keywords: ['poppy', 'remembrance']
+    // },
+    // "Saint Andrews Day": {
+    //   date: '10/30',
+    //   keywords: ['andrew', 'saint', 'st[\\s\\.]'],
+    //   regions: ['SL']
+    // },
     "Christmas Day": {
       date: '12/25',
       keywords: ['christ', 'x-?mas'],
@@ -729,6 +731,6 @@
 
 //! Set default locales
 (function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+  var moment = require('moment'); // var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
   moment.modifyHolidays.add("united_kingdom");
 }).call(this);
