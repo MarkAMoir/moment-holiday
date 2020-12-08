@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/MAMoir/moment-holiday",
   "license": "MIT",
-  "main": "./build/moment-holiday-uk.min.js",
+  "main": "./build/moment-holiday-uk.js",
   "files": [
     "build/",
     "locale/"
